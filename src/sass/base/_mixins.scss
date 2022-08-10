@@ -11,14 +11,3 @@
         border-radius: 100%;
     }
 }
-
-@mixin section_title {
-    text-align: center;
-    position: relative;
-    @include before_circle;
-    &:before {
-        top: -6px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
