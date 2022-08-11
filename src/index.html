@@ -460,24 +460,24 @@
                         Или оставьте ваши данные и я сама вам напишу:
                     </div>
 
-                    <form action="#" class="contacts__form">
+                    <form action="#" class="contacts__form" id="contacts-form">
                         <div class="contacts__input">
-                            <input required name="name" id="name" type="text">
-                            <label for="name">Ваше имя</label>
+                            <input name="name" id="name" type="text">
+                            <label class="descr" for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input required name="email" id="email" type="email">
-                            <label for="email">Ваша почта</label>
+                            <input name="email" id="email" type="email">
+                            <label class="descr" for="email">Ваша почта</label>
                         </div>
 
                         <div class="contacts__textarea">
                             <textarea name="text" id="text"></textarea>
-                            <label for="text">Ваше сообщение</label>
+                            <label class="descr" for="text">Ваше сообщение</label>
                         </div>
                         <div class="contacts__triggers"> 
                             <button class="contacts__btn btn">Отправить сообщение</button>
                             <div class="contacts__policy">
-                                <input required type="checkbox">
+                                <input type="checkbox" name="check">
                                 <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
                             </div>
                         </div>
@@ -486,6 +486,10 @@
             </div>
         </div>
     </section>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

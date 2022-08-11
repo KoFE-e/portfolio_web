@@ -43,7 +43,7 @@
         grid-template: 45px 190px 45px / repeat(2, 280px);
         justify-content: space-between;
         row-gap: 27px;
-        label {
+        .descr {
             display: block;
             position: absolute;
             height: 18px;
@@ -68,8 +68,15 @@
         line-height: 18px;
         display: flex;
         align-items: center;
+        position: relative;
         input {
             margin-right: 10px;
+        }
+        label.error {
+            @include error;
+            text-align: center;
+            bottom: -40px;
+            left: -10px;
         }
     }
     &__input {
@@ -80,6 +87,13 @@
             padding: 0 20px;
             font-weight: 500;
             font-size: 12px;
+            border: 1px solid #000000
+        }
+        input.error {
+            border: 1px solid red;
+        }
+        label.error {
+            @include error;
         }
     }
     &__textarea {
@@ -90,6 +104,13 @@
             height: 100%;
             resize: none;
             padding: 20px;
+            border: 1px solid #000000
+        }
+        textarea.error {
+            border: 1px solid red;
+        }
+        label.error {
+            @include error;
         }
     }
     &__btn {

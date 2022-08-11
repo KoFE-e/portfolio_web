@@ -10,11 +10,9 @@
     transform: translateY(-50%);
     left: 50px;
     &__link {
+        transition: 0.6s all;
         &:hover {
-            svg path {
-                transition: 0.6s all;
-                fill: $main-color;
-            }
+            transform: scale(1.2);
         }
     }
     &__divider {

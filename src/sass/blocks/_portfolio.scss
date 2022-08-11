@@ -26,6 +26,7 @@
             transition: 0.6s all;
         }
         &:hover {
+            text-decoration: none;
             transform: scale(1.05);
             img {
                 border-radius: 10px;
