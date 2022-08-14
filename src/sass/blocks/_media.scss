@@ -41,6 +41,26 @@
             padding: 0 30px;
         }
     }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: space-around;
+            row-gap: 40px;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 400px 520px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/repeat(2,250px);
+        }
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -85,11 +105,32 @@
             }
         }
     }
+    .pricelist {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, 350px);
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 300px 400px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/repeat(2,195px);
+        }
+        &__btn {
+            line-height: 16px;
+            padding: 8px 25px;
+        }
+    }
 }
 
 @media (max-width: 767.98px) {
     .container {
         max-width: 540px;
+    }
+    .divider {
+        margin-top: 15px;
     }
     .title {
         &_fz48 {
@@ -136,6 +177,28 @@
         &__ratings {
             margin-top: 40px;
             justify-content: center;
+        }
+    }
+    .portfolio {
+        padding-top: 40px;
+    }
+    .pricelist {
+        padding-top: 40px;
+        &__wrapper {
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }
+    .contacts {
+        padding-top: 40px;
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/repeat(2,250px);
         }
     }
 }
@@ -196,6 +259,40 @@
         }
         &__ratings {
             grid-template-columns: repeat(auto-fit, 300px);
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            margin-top: 20px;
+        }
+    }
+    .pricelist {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 295px);
+        }
+    }
+    .contacts {
+        padding-bottom: 50px;
+        &__form {
+            grid-template: 45px 45px 143px / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+        }
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__policy {
+            max-width: 180px;
+            margin: 0 auto;
         }
     }
 }
