@@ -122,6 +122,28 @@
             line-height: 16px;
             padding: 8px 25px;
         }
+        &__input {
+            label.error {
+                padding: 5px;
+                line-height: 14px;
+                text-align: center;
+                left: 0;
+            }
+        }
+        &__textarea {
+            label.error {
+                padding: 7px;
+                line-height: 14px;
+                text-align: center;
+                left: 0;
+                bottom: -15px;
+            }
+        }
+        &__policy {
+            label.error {
+                bottom: -70px;
+            }
+        }
     }
 }
 
@@ -199,6 +221,11 @@
         }
         &__form {
             grid-template: 45px 190px 45px/repeat(2,250px);
+        }
+        &__policy {
+            label.error {
+                bottom: -50px;
+            }
         }
     }
 }
@@ -293,6 +320,10 @@
         &__policy {
             max-width: 180px;
             margin: 0 auto;
+            label.error {
+                bottom: -90px;
+                left: 0;
+            }
         }
     }
 }
