@@ -61,6 +61,10 @@
             grid-template: 45px 190px 45px/repeat(2,250px);
         }
     }
+    .pageup {
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -324,6 +328,20 @@
                 bottom: -90px;
                 left: 0;
             }
+        }
+    }
+    .pageup {
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .modal {
+        width: 300px;
+        padding: 45px 20px;
+        &__close {
+            top: 15px;
+            right: 10px;
         }
     }
 }
